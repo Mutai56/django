@@ -1,0 +1,28 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog</title>
+</head>
+<body>
+<a href="{% url 'about' %}">About</a>
+<a href="{% url 'index' %}">Home </a>
+<a href="{% url 'contacts' %}">Contacts</a>
+<a href="{% url 'media' %}"> Media</a>
+<a href="{% url 'blog' %}">Blog</a>
+<a href="{% url 'services' %}">Services</a>
+
+ <h2>This is Our Blog page </h2>
+<p>Welcome to our Blog, where we share insights, tips, and stories that inspire and inform. Here, you’ll find a range of articles covering industry trends, expert advice, and behind-the-scenes looks at our latest projects and initiatives. Our goal is to keep you up-to-date with valuable content that reflects our expertise and our commitment to excellence. Whether you're here to learn, explore new ideas, or stay connected with our company’s journey, we hope these
+    <br>blogs bring you both knowledge and inspiration.</p>
+
+<img src="{% static 'images/blog.JPEG' %}" alt="contact image"  width="800" height="300">
+<img src="{% static 'images/blog1.JPEG' %}" alt="javascript image" width="800" height="300">
+
+</body>
+</html>

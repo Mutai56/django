@@ -1,0 +1,29 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+      <link rel="stylesheet" href="{% static 'css/services.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>services</title>
+</head>
+<body>
+
+<a href="{% url 'about' %}">About</a>
+<a href="{% url 'index' %}">Home </a>
+<a href="{% url 'contacts' %}">Contacts</a>
+<a href="{% url 'media' %}"> Media</a>
+<a href="{% url 'blog' %}">Blog</a>
+<a href="{% url 'services' %}">Services</a>
+
+<h2>These are our services </h2>
+<p>Our Services are designed to provide you with solutions that are both innovative and tailored to your unique needs. From strategic consulting and project management to hands-on support in implementation, our team brings expertise and dedication to every project. We work closely with you to understand your goals and challenges,
+    <br>delivering results that not only meet industry standards but also exceed expectations. With a commitment to quality and customer satisfaction, we are here to drive your success forward. Explore our range of services and discover how we can help you achieve your vision.</p>
+
+<img src="{% static 'images/services.JPEG' %}" alt="contact image"  width="800" height="300">
+<img src="{% static 'images/sercices2.JPEG' %}" alt="javascript image" width="800" height="300">
+
+</body>
+</html>

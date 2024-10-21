@@ -1,0 +1,26 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/media.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media</title>
+</head>
+<body>
+<a href="{% url 'about' %}">About</a>
+<a href="{% url 'index' %}">Home </a>
+<a href="{% url 'contacts' %}">Contacts</a>
+<a href="{% url 'media' %}"> Media</a>
+<a href="{% url 'blog' %}">Blog</a>
+<a href="{% url 'services' %}">Services</a>
+
+<h2>This is our media center</h2>
+<p>Welcome to our Media Page, where you can explore the latest news, insights, and updates from our company. Stay connected with press releases, interviews, articles, and multimedia resources that showcase our journey, innovations, and community impact. <br></br>We’re committed to keeping you informed and engaged, whether you're looking to learn more about our recent projects, explore industry insights, or catch up on company events. Dive into our media library and discover how we’re making strides to shape a better future.</p>
+
+<img src="{% static 'images/media.JPEG' %}" alt="contact image"  width="800" height="300">
+<img src="{% static 'images/media1.JPEG' %}" alt="javascript image" width="800" height="300">
+</body>
+</html>
